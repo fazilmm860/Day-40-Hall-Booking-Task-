@@ -2,8 +2,8 @@ const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
-const roomRouter = require('../Ticket_Booking/routes/roomRouter');
-const bookingRouter = require('../Ticket_Booking/routes/bookingRouter');
+const roomRouter = require('./routes/roomRouter');
+const bookingRouter = require('./routes/bookingRouter');
 
 dotenv.config();
 
