@@ -32,7 +32,7 @@ catch (err) {
 }
 
 app.get('/', (req, res) => {
-    res.send(`< h1 > Ticket Booking</ > `);
+    res.send(`<h1 h1 > Ticket Booking</h1> `);
 });
 
 app.use('/room', roomRouter)
