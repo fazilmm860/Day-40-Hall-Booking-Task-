@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
 const roomRouter = require('../Ticket_Booking/routes/roomRouter');
-
+const bookingRouter = require('../Ticket_Booking/routes/bookingRouter');
 
 dotenv.config();
 
@@ -36,6 +36,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/room', roomRouter)
+app.use('/booking', bookingRouter);
+
 
 app.listen(port, (req, res) => {
     console.log(`App is running on port: ${port}`);
